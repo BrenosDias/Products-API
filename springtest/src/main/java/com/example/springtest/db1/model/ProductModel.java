@@ -1,7 +1,8 @@
-package com.example.springtest.models;
+package com.example.springtest.db1.model;
 
 import jakarta.persistence.*;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.UUID;
@@ -9,10 +10,12 @@ import java.util.UUID;
 @Entity
 @Table(name = "TB_PRODUCTS")
 public class ProductModel implements Serializable {
+    @Serial
     private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
+    @Column(name = "id_product")
     private UUID idProduct;
     private String name;
     private BigDecimal value;

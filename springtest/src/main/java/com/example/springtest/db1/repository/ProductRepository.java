@@ -1,6 +1,6 @@
-package com.example.springtest.repositories;
+package com.example.springtest.db1.repository;
 
-import com.example.springtest.models.ProductModel;
+import com.example.springtest.db1.model.ProductModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
